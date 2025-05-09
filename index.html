@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatgpt </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+
+
+    <div id="container">
+        <aside class="hide-scrollbar ">
+            <header>
+                <input type="text" placeholder="search">
+            </header>
+            <ul class="hide-scrollbar ">
+                <li>
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg" alt="">
+                    <div>
+                        <h2>Prénom Nom</h2>
+                        <h3>
+                            <span class="status orange"></span>
+                            offline
+                        </h3>
+                    </div>
+                </li>
+            </ul>
+        </aside>
+        <main class="hide-scrollbar " style="background-color:    #eff3f7;">
+
+            <header>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg" alt="">
+                <div>
+                    <h2>Chat with Vincent Porter</h2>
+                    <h3>already 1902 messages</h3>
+                </div>
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_star.png" alt="">
+                <div id="progressBar" style="font-weight:bold; padding:10px; margin-bottom:10px;">Progress: 0%</div>
+
+
+            </header>
+            <ul id="chat" class="hide-scrollbar ">
+
+            </ul>
+
+            <input type="file" id="multiFile" title="Upload image" multiple />
+            <footer class="hide-scrollbar ">
+                <form onsubmit="event.preventDefault(); sendMessage();"
+                    style="display: flex; justify-content: space-between;">
+
+                    <textarea id="userInput" onkeypress="handleKeyPress(event)"
+                        placeholder="Type your message here"></textarea>
+                    <button type="submit" style=" text-align: right;">Send</button>
+
+                </form>
+
+            </footer>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
